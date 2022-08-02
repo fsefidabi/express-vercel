@@ -8,6 +8,8 @@ const router = express.Router();
  */
 router.get("/", async (req, res) => {
   try {
+    console.log('req.ip', req.ip)
+    console.log('req.socket.remoteAddress', req.socket.remoteAddress)
     res.json({
       status: 200,
       message: "Get data has successfully",
